@@ -336,7 +336,7 @@ import openai
 from dotenv import load_dotenv
 
 load_dotenv()
-openai.api_key = dotenv.get('OPENAI_API_KEY')
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def make_single_request(tweet):
